@@ -4,24 +4,18 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import App from '../components/App'
-
-// const Hello = props => (
-//   <div>Hello {props.name}!</div>
-// )
-
-// Hello.defaultProps = {
-//   name: 'David'
-// }
-
-// Hello.propTypes = {
-//   name: PropTypes.string
-// }
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <App />,
+    // <Router>
+    //   <Routes>
+    //     <Route exact path='/' element={<App />} />
+    //   </Routes>
+    // </Router>,
     document.body.appendChild(document.createElement('div')),
   )
 })
